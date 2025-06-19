@@ -55,6 +55,12 @@ Route::middleware(['auth', 'superadmin'])->group(function () {
     Route::post('/superadmin/penilaian/add', [PenilaianController::class, 'store']);
     Route::post('/superadmin/penilaian/edit/{id}', [PenilaianController::class, 'update']);
 
+    Route::get('/superadmin/laporan/kriteria', [LaporanController::class, 'kriteria']);
+    Route::get('/superadmin/laporan/pegawai', [LaporanController::class, 'pegawai']);
+    Route::get('/superadmin/laporan/jabatan', [LaporanController::class, 'jabatan']);
+    Route::get('/superadmin/laporan/penilaian', [LaporanController::class, 'penilaian']);
+    Route::get('/superadmin/laporan/hasil', [LaporanController::class, 'hasil']);
+
     Route::get('/superadmin/normalisasi', [PerhitunganController::class, 'normalisasi']);
     Route::get('/superadmin/terbobot', [PerhitunganController::class, 'terbobot']);
     Route::get('/superadmin/solusi', [PerhitunganController::class, 'solusi']);

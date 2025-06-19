@@ -10,6 +10,9 @@
                 <div class="card-header-right">
                     <div class="btn-group card-option">
 
+
+                        <a href="/superadmin/laporan/penilaian" target="_blank" class="btn btn-danger">Print</a>
+
                         <a href="/superadmin/penilaian/add" class="btn btn-primary">Tambah</a>
                     </div>
                 </div>
