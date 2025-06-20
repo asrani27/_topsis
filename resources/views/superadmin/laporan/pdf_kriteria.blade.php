@@ -50,18 +50,18 @@
         @endforeach
     </table>
 
-    {{-- <table width="100%">
+    <table width="100%">
         <tr>
             <td width="60%"></td>
             <td></td>
             <td><br />Mengetahui, {{\Carbon\Carbon::now()->translatedFormat('d F Y')}}<br />
-                Kertak Hanyar<br /><br /><br /><br />
+                Pimpinan<br /><br /><br /><br />
 
-                <u>-</u><br />
-                Pimpinan Cabang II
+                <br />
+                (.....................)
             </td>
         </tr>
-    </table> --}}
+    </table>
 </body>
 
 </html>
