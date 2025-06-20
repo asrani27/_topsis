@@ -34,6 +34,7 @@
             <th>Jarak D +</th>
             <th>Jarak D -</th>
             <th>Preferensi (Vi)</th>
+            <th>Keterangan</th>
         </tr>
         @php
         $no =1;
@@ -46,6 +47,12 @@
             <td>{{ number_format($item['d_plus'], 4) }}</td>
             <td>{{ number_format($item['d_minus'], 4) }}</td>
             <td><strong>{{ number_format($item['preferensi'], 4) }}</strong></td>
+            <td>
+                @if (number_format($item['preferensi'] >= 0.8))
+                Sangat Baik
+                @endif
+                @if (number_format($item['preferensi'] >= 0.5) && number_format($item['preferensi'] < 0.8)) Baik @endif
+                    @if (number_format($item['preferensi'] <=0.5)) Kurang Baik @endif </td>
         </tr>
         @endforeach
     </table>
@@ -58,7 +65,7 @@
                 Pimpinan<br /><br /><br /><br />
 
                 <br />
-               (.....................)
+                (.....................)
             </td>
         </tr>
     </table>
